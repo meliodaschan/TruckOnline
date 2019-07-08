@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "255715292781",
+    "firebase_url": "https://truckonline.firebaseio.com",
+    "project_id": "truckonline",
+    "storage_bucket": "truckonline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255715292781:android:ab954ee876d5d1e7",
+        "android_client_info": {
+          "package_name": "com.example.user.truckonlinetaixe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255715292781-6uluu4ftag89an3aacnqkt9hvn1jfmuf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.truckonlinetaixe",
+            "certificate_hash": "dc2aeeec4be1872a4f8f6bf9c44bf34945c586f1"
+          }
+        },
+        {
+          "client_id": "255715292781-7kudm6tnqigpqb0c2bhdiasher2gie88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-wauiLjg08_a7y8AlOc7TgwDPGSUm9gI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255715292781-7kudm6tnqigpqb0c2bhdiasher2gie88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

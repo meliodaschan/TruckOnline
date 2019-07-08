@@ -1,0 +1,311 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F7F7"
+    android:weightSum="10"
+    android:padding="8dp">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#03A9F4"
+            android:text="Truck  "
+            android:textStyle="bold|italic"
+
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_height="20dp"
+            android:src="@drawable/truck"
+            />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#03A9F4"
+
+            android:text="  Online"
+            android:textStyle="bold|italic"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textViewThoiGianKhoiHanh"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   01/01/2019"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#F44336"
+        android:text="ĐƠN HÀNG CỦA BẠN"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0"
+        android:text="Thông tin tài xế"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.5"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/boder_bottom"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textViewTenTX"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="   Lương Quang Hiệu"
+                />
+            <TextView
+                android:id="@+id/textViewSoDienThoaiTX"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   01234567890"
+                />
+            <TextView
+                android:id="@+id/textViewLoaiXe"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Xe Đông lạnh| 59V2-69945"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@drawable/boder_bottom"
+        >
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin chuyến hàng"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/diemdi"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Điểm đón/nhận hàng"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/textViewDiemDi"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Nguyễn Thái Sơn, phường 5, Gò Vấp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+
+            android:layout_height="wrap_content"
+            android:src="@drawable/bacham"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/diemden2"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Điểm đến/Giao hàng"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/textViewDiemDen"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Nguyễn Văn Nghi, phường 5, Gò Vấp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            >
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hanghoa"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/textViewTenHang"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Bánh mì thơm bơ"
+                    />
+                <TextView
+                    android:id="@+id/textViewLoaiHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Dễ vỡ"
+                    />
+                <TextView
+                    android:id="@+id/textViewTrongLuongHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   8 tấn"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết thanh toán"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="   Giá xe  "
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewGiaCuoc"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="   50000 VNĐ"
+                android:textStyle="bold"
+
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

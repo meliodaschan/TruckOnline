@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lndonhang"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:background="#E4E2E2"
+    android:padding="8dp">
+
+
+
+    <ImageView
+    android:layout_marginTop="10dp"
+    android:id="@+id/imgxetai"
+    android:layout_weight="1"
+    android:layout_height="35dp"
+        android:layout_width="0dp"
+
+    android:src="@drawable/truck"
+    />
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="9"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="15dp"
+
+       android:orientation="vertical"
+       >
+       <TextView
+           android:id="@+id/textViewDiemDen1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="172 Trần Phú"
+
+           />
+       <TextView
+           android:id="@+id/textViewTinhTrang1"
+           android:textColor="#4CAF50"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Đã hủy"
+
+           />
+       <TextView
+           android:layout_marginTop="5dp"
+           android:id="@+id/textViewThoiGianKhoiHanh1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="20/11/2019"
+
+           />
+
+   </LinearLayout>
+
+
+</LinearLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--tools:context="com.example.user.truckonlinetaixe.TaiXeActivity"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#ECECEC"-->
+    <!--&gt;-->
+    <!--<include layout="@layout/toolbar_donhangkh"></include>-->
+
+
+    <!--<ImageView-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:id="@+id/imgxetai"-->
+        <!--android:background="@drawable/boder_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/xetai"-->
+        <!--/>-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/textViewId1"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/imgxetai"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="18sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#CF2A2A"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:text="ID"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+    <!--<ImageView-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/imgtenkh"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/tenkh"-->
+        <!--android:layout_below="@+id/imgxetai"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:gravity="left"-->
+
+        <!--android:layout_marginTop="15dp"-->
+
+        <!--android:id="@+id/textViewTenKH1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_toRightOf="@id/imgtenkh"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_below="@+id/imgxetai"-->
+        <!--android:text="Họ tên sinh viên"-->
+        <!--android:textColor="#CF2A2A"-->
+
+
+        <!--/>-->
+    <!--<ImageView-->
+        <!--android:layout_marginTop="10dp"-->
+
+        <!--android:id="@+id/imgplace"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/place"-->
+        <!--android:layout_below="@+id/textViewTenKH1"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_below="@+id/textViewTenKH1"-->
+        <!--android:layout_toRightOf="@id/imgplace"-->
+        <!--android:id="@+id/textViewDiemDi1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#CF2A2A"-->
+
+        <!--android:text="Điểm đi"-->
+        <!--/>-->
+    <!--<ImageView-->
+        <!--android:layout_marginTop="10dp"-->
+
+        <!--android:id="@+id/imagediemden"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/dieuhuong"-->
+        <!--android:layout_below="@+id/textViewDiemDi1"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_below="@+id/textViewDiemDi1"-->
+        <!--android:layout_toRightOf="@id/imagediemden"-->
+        <!--android:id="@+id/textViewDiemDen1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textColor="#CF2A2A"-->
+        <!--android:text="Điểm đến"-->
+
+        <!--/>-->
+    <!--<ImageView-->
+        <!--android:layout_marginTop="10dp"-->
+
+        <!--android:id="@+id/imagemoney"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/money"-->
+        <!--android:layout_below="@+id/textViewDiemDen1"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_below="@+id/textViewDiemDen1"-->
+        <!--android:layout_toRightOf="@+id/imagemoney"-->
+        <!--android:id="@+id/textViewGiaCuoc1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18sp"-->
+        <!--android:text="Giá cước"-->
+        <!--android:background="@drawable/boder_bottom"-->
+
+        <!--android:textColor="#CF2A2A"-->
+
+        <!--/>-->
+    <!--<ImageView-->
+        <!--android:layout_marginTop="10dp"-->
+
+        <!--android:id="@+id/imagethoigian"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/thoigian"-->
+
+        <!--android:layout_below="@+id/textViewGiaCuoc1"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_below="@+id/textViewGiaCuoc1"-->
+        <!--android:id="@+id/textViewThoiGianKhoiHanh1"-->
+        <!--android:layout_toRightOf="@+id/imagethoigian"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18sp"-->
+        <!--android:text="Thời gian khởi hành"-->
+
+        <!--android:textColor="#CF2A2A"-->
+
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnChiTiet1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:background="#5E312A2A"-->
+        <!--android:layout_marginTop="15dp"-->
+
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textViewThoiGianKhoiHanh1"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:text="Chi tiết"-->
+        <!--android:textColor="#ffffff"-->
+
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnTuChoi1"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/textViewThoiGianKhoiHanh1"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:background="#F34009"-->
+
+
+        <!--android:layout_toRightOf="@+id/btnChiTiet1"-->
+        <!--android:text="Từ chối" />-->
+
+
+<!--</RelativeLayout>-->

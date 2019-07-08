@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xam"
+    android:orientation="vertical"
+    tools:context="com.example.user.truckonlinetaixe.DangKyActivity">
+
+    <include layout="@layout/toolbar_hosocanhan"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <EditText
+                android:id="@+id/edtTenChuXe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/person"
+                android:hint="Tên chủ xe"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edtSDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/iconphone"
+                android:hint="Số điện thoại "
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edtMoTa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/icondetail"
+                android:hint="Mô tả xe"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/tvTrongTaiXe"
+                    android:textSize="18sp"
+                    android:text="Trọng tải xe :"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <Spinner
+                    android:id="@+id/spnTrongTaiXedk"
+                    android:layout_marginBottom="20dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp"
+                android:background="#fff"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+                <TextView
+                    android:id="@+id/tvLoaiXe"
+                    android:textSize="18sp"
+                    android:text="Loại xe :"
+                    android:layout_margin="5dp"
+                    android:paddingEnd="37dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:layout_marginBottom="20dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/spnLoaiXedk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtBienSoXe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/iconcar"
+                android:hint="Biển số xe"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:editable="false"/>
+            <TextView
+                android:id="@+id/txttaikhoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/money"
+                android:hint="Tài khoản hiện có:"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+
+
+
+            <Button
+                android:id="@+id/btnCapNhatTX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/xanh"
+                android:text="CẬP NHẬT"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

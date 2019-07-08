@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.truckonlinetaixe.MapsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/xanh"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="YÊU CẦU BÁO GIÁ"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:padding="14dp"
+                android:layout_marginEnd="40dp"
+                android:textSize="20sp"
+                android:gravity = "center"
+                android:id="@+id/toolbar_title" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/xanh"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/edtDiemDi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Điểm đi"
+            android:ems="10"
+            android:completionThreshold="1"
+            android:layout_marginTop="10dp">
+
+        </AutoCompleteTextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/edtDiemDen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:completionThreshold="1"
+            android:hint="Điểm đến" >
+        </AutoCompleteTextView>
+
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:context=".MapsActivity" />
+
+        <Button
+            android:id="@+id/expandableButton"
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/xanh"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton"
+            android:paddingRight="10dp"
+            android:text="Thông Tin Chuyến Xe"
+            android:textColor="#fff" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableButton"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <LinearLayout
+                android:background="@color/xam"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etTenMH_DatXe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white"
+                    android:hint="Tên mặt hàng :"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="5dp"
+                    android:background="#fff"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+                    <TextView
+                        android:id="@+id/tvLoaiXe"
+                        android:textSize="18sp"
+                        android:text="Loại xe cần :"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:id="@+id/spnLoaiXe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1">
+
+                    </Spinner>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_weight="0.7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="5dp"
+                    android:background="#fff"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/tvTrongTaiXe"
+                        android:textSize="18sp"
+                        android:text="Trọng tải xe cần :"
+                        android:layout_margin="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <Spinner
+                        android:id="@+id/spnTrongTaiXe"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etLoaiHang"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:hint="Loại hàng :"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"/>
+
+                    <EditText
+                        android:id="@+id/etKhoiLuongHang"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:hint="Khối lượng hàng (Kg):"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/etThoiGian"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white"
+                    android:hint="Thời gian khởi hành"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/etGiaCuoc"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#F4E44E"
+                    android:hint="Giá cước"
+                    android:inputType="none"
+                    android:textIsSelectable="true"
+                    android:focusable="false"
+                    android:padding="10dp" />
+
+
+                <Button
+                    android:id="@+id/btnDatXe"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/xanh"
+                    android:textColor="@android:color/white"
+                    android:text="đặt xe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/content_main" />-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

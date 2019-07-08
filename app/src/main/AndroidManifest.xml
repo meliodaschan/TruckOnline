@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.truckonlinetaixe">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan">
+        <activity android:name=".LienHeActivity"></activity>
+        <activity android:name=".ChapNhanTaiXeActivity" />
+        <activity android:name=".ChapNhanDonHangActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".HomeTXActivity" />
+        <activity android:name=".YeuCauBaoGiaActivity" />
+        <activity
+            android:name=".MapsActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DangNhapActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DangKyActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DangKyKHActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DangNhapKHActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DonHangDangChoKHActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChiTietDonHangDangChoKHActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".YeuCauBaoGiaKHActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".HoSoCaNhanActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".HoSoCaNhanTXActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".DonHangDaHuyKHActivity" />
+        <activity android:name=".ChiTietDonHangDaHuyKHActivity" />
+        <activity android:name=".DonHangDaHoanThanhKHActivity" />
+        <activity android:name=".DonHangDaHoanThanhTXActivity" />
+        <activity android:name=".DonHangDangThucHienKHActivity" />
+        <activity android:name=".DonHangDangThucHienTXActivity" />
+        <activity android:name=".DonHangDangChoTXActivity" />
+        <activity android:name=".DonHangDaHuyTXActivity" />
+        <activity android:name=".ChiTietDonHangDangThucHienKHActivity" />
+        <activity android:name=".ChiTietDonHangDangThucHienTXActivity" />
+        <activity android:name=".ChiTietDonHangDaHoanThanhTXActivity" />
+        <activity android:name=".ChiTietDonHangDaHoanThanhKHActivity" />
+        <activity android:name=".ChiTietDonHangDaHuyTXActivity" />
+        <activity android:name=".ChiTietDonHangDangChoTXActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

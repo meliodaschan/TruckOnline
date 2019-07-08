@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".LienHeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lienhe"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIÊN HỆ VỚI CHÚNG TÔI"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/xanh"
+        android:paddingBottom="10dp"
+        android:background="@drawable/boder_bottom"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@drawable/vien"
+                android:id="@+id/LO1_reachingus"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:text="Nếu bạn thích ứng dụng này, hoặc có suy nghĩ gì về nó - Hãy chia sẻ với tất cả mọi người "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#F44336"
+                        android:textSize="23dp"
+                        android:gravity="right"
+                        android:text="Viết cảm nhận"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/LO1_reachingus"
+                android:background="@drawable/vien"
+                android:id="@+id/LO2_reachingus"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:text="Bạn có ý tưởng, yêu cầu để phát triển ứng dụng ? Hoặc đơn giản bạn muốn báo cáo về lỗi nào đó của hệ thống ? Hãy gửi Email cho chúng tôi."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#F44336"
+                        android:textSize="23dp"
+                        android:gravity="right"
+                        android:text="Gửi Email"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/LO2_reachingus"
+                android:background="@drawable/vien"
+                android:id="@+id/LO3_reachingus"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:textSize="17sp"
+                    android:text="Tham gia cộng đồng và theo dõi chúng tôi tại Facebook để nắm bắt những bản cập nhật và thay đổi mới nhất."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#F44336"
+                        android:textSize="23dp"
+                        android:gravity="right"
+                        android:text="Follow/Like Us Facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
