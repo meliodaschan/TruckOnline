@@ -7,7 +7,7 @@
     android:background="@color/xam"
     android:orientation="vertical"
 
-    tools:context="com.example.user.truckonlinetaixe.DangKyKHActivity">
+    tools:context="com.example.user.truckonlinetaixe.Activity.DangKyKHActivity">
 
     <include layout="@layout/toolbar_dangky"></include>
 

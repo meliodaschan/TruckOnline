@@ -9,11 +9,15 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.example.user.truckonlinetaixe.Activity.ChapNhanDonHangActivity;
+import com.example.user.truckonlinetaixe.Activity.ChiTietDonHangDaHoanThanhKHActivity;
+import com.example.user.truckonlinetaixe.Activity.DonHangDangChoKHActivity;
+import com.example.user.truckonlinetaixe.Activity.MapsActivity;
+import com.example.user.truckonlinetaixe.Activity.YeuCauBaoGiaActivity;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 

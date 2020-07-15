@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/xam"
     android:orientation="vertical"
-    tools:context="com.example.user.truckonlinetaixe.DangKyActivity">
+    tools:context="com.example.user.truckonlinetaixe.Activity.DangKyActivity">
 
     <include layout="@layout/toolbar_hosocanhan"></include>
 

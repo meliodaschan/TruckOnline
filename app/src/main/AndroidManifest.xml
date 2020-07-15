@@ -22,9 +22,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         android:windowSoftInputMode="adjustPan">
-        <activity android:name=".LienHeActivity"></activity>
-        <activity android:name=".ChapNhanTaiXeActivity" />
-        <activity android:name=".ChapNhanDonHangActivity" />
+        <activity android:name=".Activity.LienHeActivity"></activity>
+        <activity android:name=".Activity.ChapNhanTaiXeActivity" />
+        <activity android:name=".Activity.ChapNhanDonHangActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -43,56 +43,56 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".HomeTXActivity" />
-        <activity android:name=".YeuCauBaoGiaActivity" />
+        <activity android:name=".Activity.HomeTXActivity" />
+        <activity android:name=".Activity.YeuCauBaoGiaActivity" />
         <activity
-            android:name=".MapsActivity"
+            android:name=".Activity.MapsActivity"
             android:launchMode="singleTop"
             android:label="@string/title_activity_maps"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DangNhapActivity"
+            android:name=".Activity.DangNhapActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".DangKyActivity"
+            android:name=".Activity.DangKyActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".DangKyKHActivity"
+            android:name=".Activity.DangKyKHActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".DangNhapKHActivity"
+            android:name=".Activity.DangNhapKHActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".DonHangDangChoKHActivity"
+            android:name=".Activity.DonHangDangChoKHActivity"
             android:label="@string/title_activity_maps"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ChiTietDonHangDangChoKHActivity"
+            android:name=".Activity.ChiTietDonHangDangChoKHActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".YeuCauBaoGiaKHActivity"
+            android:name=".Activity.YeuCauBaoGiaKHActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".HoSoCaNhanActivity"
+            android:name=".Activity.HoSoCaNhanActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".HoSoCaNhanTXActivity"
+            android:name=".Activity.HoSoCaNhanTXActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".DonHangDaHuyKHActivity" />
-        <activity android:name=".ChiTietDonHangDaHuyKHActivity" />
-        <activity android:name=".DonHangDaHoanThanhKHActivity" />
-        <activity android:name=".DonHangDaHoanThanhTXActivity" />
-        <activity android:name=".DonHangDangThucHienKHActivity" />
-        <activity android:name=".DonHangDangThucHienTXActivity" />
-        <activity android:name=".DonHangDangChoTXActivity" />
-        <activity android:name=".DonHangDaHuyTXActivity" />
-        <activity android:name=".ChiTietDonHangDangThucHienKHActivity" />
-        <activity android:name=".ChiTietDonHangDangThucHienTXActivity" />
-        <activity android:name=".ChiTietDonHangDaHoanThanhTXActivity" />
-        <activity android:name=".ChiTietDonHangDaHoanThanhKHActivity" />
-        <activity android:name=".ChiTietDonHangDaHuyTXActivity" />
-        <activity android:name=".ChiTietDonHangDangChoTXActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.DonHangDaHuyKHActivity" />
+        <activity android:name=".Activity.ChiTietDonHangDaHuyKHActivity" />
+        <activity android:name=".Activity.DonHangDaHoanThanhKHActivity" />
+        <activity android:name=".Activity.DonHangDaHoanThanhTXActivity" />
+        <activity android:name=".Activity.DonHangDangThucHienKHActivity" />
+        <activity android:name=".Activity.DonHangDangThucHienTXActivity" />
+        <activity android:name=".Activity.DonHangDangChoTXActivity" />
+        <activity android:name=".Activity.DonHangDaHuyTXActivity" />
+        <activity android:name=".Activity.ChiTietDonHangDangThucHienKHActivity" />
+        <activity android:name=".Activity.ChiTietDonHangDangThucHienTXActivity" />
+        <activity android:name=".Activity.ChiTietDonHangDaHoanThanhTXActivity" />
+        <activity android:name=".Activity.ChiTietDonHangDaHoanThanhKHActivity" />
+        <activity android:name=".Activity.ChiTietDonHangDaHuyTXActivity" />
+        <activity android:name=".Activity.ChiTietDonHangDangChoTXActivity" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
